@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: XiaoTao's Notes
+subtitle: Growth process
+description: 选择不同，命运自然不同。
 keywords:
-author: John Doe
-language:
+author: 秦纪涛
+language: zh-Hans
 timezone:
 
 # URL
@@ -28,6 +28,15 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+#look
+algolia:
+  applicationID: 'C7IX050PQZ'
+  apiKey: '6754d88071a1bf797a026a7b41df4bfa'
+  adminApiKey: 'dc4219e95bd32639dd4047dfe686a0c8'
+  indexName: 'Index'
+  chunkSize: 5000
+  
+  
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
