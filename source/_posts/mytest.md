@@ -1,5 +1,7 @@
 ---
-title: mytest
-date: 2018-04-28 05:08:25
+title: 标签测试文章
 tags:
+  - Testing
+  - Another Tag
+categories: Testing
 ---
