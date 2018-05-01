@@ -77,6 +77,9 @@
 
 
 
+  <meta property="fb:admins" content="goqinjitao@gmail.com" />
+  <meta property="fb:app_id" content="588538594846369" />
+
 
 
 <meta name="description" content="选择不同，命运自然不同。">
@@ -128,6 +131,24 @@
 
   <title>test1 | XiaoTao's Notes</title>
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '588538594846369',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -365,6 +386,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/30/test1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2018/04/30/test1/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
           
 
           
@@ -413,6 +444,24 @@
 
       
       
+        <div class="post-widgets">
+        
+
+        
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
+
+        
+        </div>
+      
       
 
       
@@ -455,6 +504,16 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div class="fb-comments"
+           data-href="http://yoursite.com/2018/04/30/test1/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
+    </div>
 
   
 
