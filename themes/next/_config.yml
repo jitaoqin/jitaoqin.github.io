@@ -401,16 +401,25 @@ valine:
 # Introduction: https://imsun.net/posts/gitment-introduction/
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
-  enable: false
-  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
-  count: true # Show comments count in post meta area
-  lazy: false # Comments lazy loading with a button
-  cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github ID
-  github_repo: # MUST HAVE, The repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  enable: true
+  mint: true 
+  # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true 
+  # Show comments count in post meta area
+  lazy: false 
+  # Comments lazy loading with a button
+  cleanly: true
+  # Hide 'Powered by ...' on footer, and more
+  language:
+  # Force language, or auto switch by theme
+  github_user: jitaoqin
+  # MUST HAVE, Your Github ID
+  github_repo: jitaoqin.github.io
+  # MUST HAVE, The repo you use to store Gitment comments
+  client_id: d841d9646a0520200715
+  # MUST HAVE, Github client id for the Gitment
+  client_secret: b5b0005fea010729a07e64151853a5e996230bfa
+  # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
@@ -496,7 +505,7 @@ duoshuo_info:
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
 facebook_sdk:
-  enable:       true
+  enable:       false
   app_id:       588538594846369
   fb_admin:     goqinjitao@gmail.com
   like_button:  true
@@ -506,7 +515,7 @@ facebook_sdk:
 # This plugin depends on Facebook SDK.
 # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
 facebook_comments_plugin:
-  enable:       true
+  enable:       false
   num_of_posts: 10    # min posts num is 1
   width:        100%  # default width is 550px
   scheme:       light # default scheme is light (light or dark)
