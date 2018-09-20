@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="选择不同，命运自然不同。">
-<meta property="og:type" content="website">
+<meta name="description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输。 ​    所有的文件在硬盘或在传输时都是以字节的方式进行的，在磁盘上是先把字符编码成字节，再储存这些字节到磁盘。在读取文件（特别是文本文件）时，也是一个字节一个字节地读取以形成字节序列。而字符是只有在内存中才会形成，所以在开发中，字节流使用较为广泛。 ​    Java 内用 U">
+<meta property="og:type" content="article">
 <meta property="og:title" content="XiaoTao&#39;s Notes">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/09/19/IO流/index.html">
 <meta property="og:site_name" content="XiaoTao&#39;s Notes">
-<meta property="og:description" content="选择不同，命运自然不同。">
+<meta property="og:description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输。 ​    所有的文件在硬盘或在传输时都是以字节的方式进行的，在磁盘上是先把字符编码成字节，再储存这些字节到磁盘。在读取文件（特别是文本文件）时，也是一个字节一个字节地读取以形成字节序列。而字符是只有在内存中才会形成，所以在开发中，字节流使用较为广泛。 ​    Java 内用 U">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-20T11:41:21.222Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XiaoTao&#39;s Notes">
-<meta name="twitter:description" content="选择不同，命运自然不同。">
+<meta name="twitter:description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输。 ​    所有的文件在硬盘或在传输时都是以字节的方式进行的，在磁盘上是先把字符编码成字节，再储存这些字节到磁盘。在读取文件（特别是文本文件）时，也是一个字节一个字节地读取以形成字节序列。而字符是只有在内存中才会形成，所以在开发中，字节流使用较为广泛。 ​    Java 内用 U">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/19/IO流/"/>
 
 
 
 
 
-  <title>XiaoTao's Notes</title>
+  <title> | XiaoTao's Notes</title>
   
 
 
@@ -152,8 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -274,9 +274,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -306,9 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/19/IO流/" itemprop="url">未命名</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -333,6 +331,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/19/IO流/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/09/19/IO流/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -369,9 +377,7 @@
       
 
       
-        
-          
-            <pre><code>流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输。
+        <pre><code>流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输。
 </code></pre><p>​    所有的文件在硬盘或在传输时都是以字节的方式进行的，在磁盘上是先把字符编码成字节，再储存这些字节到磁盘。在读取文件（特别是文本文件）时，也是一个字节一个字节地读取以形成字节序列。而字符是只有在内存中才会形成，所以在开发中，字节流使用较为广泛。</p>
 <p>​    Java 内用 Unicode 编码存储字符，字符流处理类负责将外部的其他编码的字符流和 java 内 Unicode 字符流之间的转换。而类 InputStreamReader 和 OutputStreamWriter 处理字符流和字节流的转换。字符流（一次可以处理一个缓冲区）一次操作比字节流（一次一个字节）效率高。字符流使用了缓冲区，而字节流没有使用缓冲区。<strong>在字符流的操作中，所有的字符都是在内存中形成的</strong>，在输出前会将所有的内容暂时保存在内存之中，所以使用了缓冲区暂存数据。如果想在不关闭时也可以将字符流的内容全部输出，则可以使用Writer类中的flush()方法完成。进行字符集的转化通过 InputStreamReader,OutputStreamWriter来关联，实际上是通过byte[]和String来关联在从字节流转化为字符流时，实际上就是byte[]转化为String时，public String(byte bytes[], String charsetName)有一个关键的参数字符集编码，通常我们都省略了，那系统就用操作系统的lang而在字符流转化为字节流时，实际上是String转化为byte[]时，byte[]    String.getBytes(String charsetName)。 </p>
 <p>​    字符流处理的单元为2个字节的Unicode字符，操作字符、字符数组或字符串，字节流处理单元为1个字节，操作字节和字节数组。所以字符流是由Java虚拟机将字节转化为2个字节的Unicode字符为单位的字符而成的，如果是音频文件、图片、歌曲，就用字节流好点，如果是关系到中文（文本）的，用字符流好点。 </p>
@@ -454,8 +460,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">import java.io.FileInputStream;</span><br><span class="line">import java.io.FileOutputStream;</span><br><span class="line">import java.io.IOException;</span><br><span class="line"></span><br><span class="line">public class SplitFile &#123;</span><br><span class="line">​    public static void main(String[] args) throws IOException &#123;</span><br><span class="line">​        splitFile();</span><br><span class="line">​    &#125; </span><br><span class="line"></span><br><span class="line">​    public static void splitFile()throws IOException &#123;</span><br><span class="line">​        FileInputStream fis =  new FileInputStream(&quot;c:\\1.bmp&quot;);</span><br><span class="line">​        FileOutputStream fos = null;</span><br><span class="line">​        byte[] buf = new byte[1024*1024];</span><br><span class="line">​        int len = 0;</span><br><span class="line">​        int count = 1;</span><br><span class="line">​        while((len=fis.read(buf))!=-1) &#123;</span><br><span class="line">​            fos = new FileOutputStream(&quot;c:\\splitfiles\\&quot;+(count++)+&quot;.part&quot;);</span><br><span class="line">​            fos.write(buf,0,len);</span><br><span class="line">​            fos.close();</span><br><span class="line">​        &#125;  </span><br><span class="line">   fis.close();     </span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>​    可以看出，java中并没有可以直接分割流的对象。分割流的方法很多，以上例子主要是通过计数器，和作为缓冲区的数组来控制分割流，然后输出到不同的文件上。</p>
 
-          
-        
       
     </div>
     
@@ -472,655 +476,40 @@
       
 
       
-
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/19/jQuery手册/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="秦纪涛">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="XiaoTao's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
+        <div class="post-widgets">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/19/jQuery手册/" itemprop="url">jQuery手册</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-19T10:49:11+08:00">
-                2018-09-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/09/19/jQuery手册/" class="leancloud_visitors" data-flag-title="jQuery手册">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="3-jQuery-选择器"><a href="#3-jQuery-选择器" class="headerlink" title="3 jQuery 选择器"></a>3 jQuery 选择器</h1><h2 id="3-1-基本选择器"><a href="#3-1-基本选择器" class="headerlink" title="3.1 基本选择器"></a>3.1 基本选择器</h2><table>
-<thead>
-<tr>
-<th style="text-align:left">选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">*</td>
-<td>$(“*”)</td>
-<td>返回所有元素</td>
-</tr>
-<tr>
-<td style="text-align:left">#id</td>
-<td>$(“#tt”)</td>
-<td>返回id=“tt”的元素</td>
-</tr>
-<tr>
-<td style="text-align:left">.class</td>
-<td>$(“.blue”)</td>
-<td>返回class=“blue”的元素</td>
-</tr>
-<tr>
-<td style="text-align:left">element</td>
-<td>$(“p”)</td>
-<td>返回所有p元素的</td>
-</tr>
-<tr>
-<td style="text-align:left">.class,.class</td>
-<td>$(“.blue”,”red”)</td>
-<td>返回class=”blue”或class=”red”的元素</td>
-</tr>
-<tr>
-<td style="text-align:left">elemet.class</td>
-<td>$(“p.blue”)</td>
-<td>返回p元素且class=”blue”的元素</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-2-层级选择器"><a href="#3-2-层级选择器" class="headerlink" title="3.2 层级选择器"></a>3.2 层级选择器</h2><table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ancestor descendant</td>
-<td>$(“div p”)</td>
-<td>返回div元素下的所有p元素</td>
-</tr>
-<tr>
-<td>parent   &gt; child</td>
-<td>$(“div &gt; p”)</td>
-<td>返回div元素标签为p的子元素</td>
-</tr>
-<tr>
-<td>prev   + next</td>
-<td>$(“div + p”)</td>
-<td>返回所有紧接在div后面的 p元素</td>
-</tr>
-<tr>
-<td>prev   ~ siblings</td>
-<td>$(“div ~ p”)</td>
-<td>返回div后面的同辈p元素。</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-3-基本过滤选择器"><a href="#3-3-基本过滤选择器" class="headerlink" title="3.3 基本过滤选择器"></a>3.3 基本过滤选择器</h2><table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>:first</td>
-<td>$(“p:first”)</td>
-<td>返回第一个p元素</td>
-</tr>
-<tr>
-<td>:last</td>
-<td>$(“p:last”)</td>
-<td>返回最后一个p元素</td>
-</tr>
-<tr>
-<td>:even</td>
-<td>$(“p:even”)</td>
-<td>返回所有index=偶数的p元素(index从0开始)</td>
-</tr>
-<tr>
-<td>:odd</td>
-<td>$(“p:odd”)</td>
-<td>返回所有index=奇数的p元素</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>:gt(index)</td>
-<td>$(“ul li:gt(2)”)</td>
-<td>返回index大于2的所有li元素（index从0开始）</td>
-</tr>
-<tr>
-<td>:eq(index)</td>
-<td>$(“ul li:eq(2)”)</td>
-<td>返回index=2的的li元素</td>
-</tr>
-<tr>
-<td>:lt(index)</td>
-<td>$(“ul li:lt(2)”)</td>
-<td>返回index&lt;2的li元素</td>
-</tr>
-<tr>
-<td>:not(selector)</td>
-<td>$(“li:not(“.blue”)”)</td>
-<td>返回所有class！=”blue”的li元素</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-4-内容过滤选择器"><a href="#3-4-内容过滤选择器" class="headerlink" title="3.4  内容过滤选择器"></a>3.4  内容过滤选择器</h2><table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>:contains(<em>text</em>)</td>
-<td>$(“td:contains(‘I love U)”)</td>
-<td>返回包含指定字符串的所有元素</td>
-</tr>
-<tr>
-<td>:empty</td>
-<td>$(“td:empty”)</td>
-<td>返回无子（元素）节点的所有元素</td>
-</tr>
-<tr>
-<td>:parent</td>
-<td>$(“td:parent”)</td>
-<td>返回含有子元素或者文本的元素</td>
-</tr>
-<tr>
-<td>:has(selector)</td>
-<td>$(“div:has(‘p’)”)</td>
-<td>返回所有包含有 p 元素在其内的div元素</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-5-可见性过滤选择器"><a href="#3-5-可见性过滤选择器" class="headerlink" title="3.5 可见性过滤选择器"></a>3.5 可见性过滤选择器</h2><table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>:hidden</td>
-<td>$(“p:hidden”)</td>
-<td>返回所有隐藏的 p元素</td>
-</tr>
-<tr>
-<td>:visible</td>
-<td>$(“p:visible”)</td>
-<td>返回所有可见的p元素</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-6-属性过滤选择器"><a href="#3-6-属性过滤选择器" class="headerlink" title="3.6 属性过滤选择器"></a>3.6 属性过滤选择器</h2><table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[attribute]</td>
-<td>$(“[name]”)</td>
-<td>返回所有带有 name属性的元素</td>
-</tr>
-<tr>
-<td>[attribute=value]</td>
-<td>$(“[name=’test’]”)</td>
-<td>返回所有 name 属性的值等于 “test” 的元素</td>
-</tr>
-<tr>
-<td>[attribute!=value]</td>
-<td>$(“[name!=’test’]”)</td>
-<td>返回所有 name属性的值不等于 “test” 的元素</td>
-</tr>
-<tr>
-<td>[attribute$=value]</td>
-<td>$(“[name\$=’test’]”</td>
-<td>返回所有 name属性的值包含以 “test” 结尾的元素</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-7-子元素过滤选择器"><a href="#3-7-子元素过滤选择器" class="headerlink" title="3.7 子元素过滤选择器"></a>3.7 子元素过滤选择器</h2><table>
-<thead>
-<tr>
-<th style="text-align:left">选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">:nth-child(index/even/odd)</td>
-<td>$(“ul li:nth-child(n)”)</td>
-<td>返回父元素的第n个/偶数/奇数子元素，从1开始</td>
-</tr>
-<tr>
-<td style="text-align:left">:first-child</td>
-<td>$(“ul li:first-child”)</td>
-<td>返回所有父元素ul的第一个子元素li<br><font color="0000ff">:first只匹配第一元素</font></td>
-</tr>
-<tr>
-<td style="text-align:left">:last-child</td>
-<td>$(“ul li:last-child”)</td>
-<td>返回所有父元素ul的最后一个子元素li</td>
-</tr>
-<tr>
-<td style="text-align:left">: only-child</td>
-<td>$(“ul li:only-child”)</td>
-<td>li是ul的唯一子元素则返回</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-8-表单属性过滤器"><a href="#3-8-表单属性过滤器" class="headerlink" title="3.8 表单属性过滤器"></a>3.8 表单属性过滤器</h2><table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>:enabled</td>
-<td>$(“:enabled”)</td>
-<td>返回所有激活的 input 元素</td>
-</tr>
-<tr>
-<td>:disabled</td>
-<td>$(“:disabled”)</td>
-<td>返回所有禁用的 input 元素</td>
-</tr>
-<tr>
-<td>:selected</td>
-<td>$(“:selected”)</td>
-<td>返回所有被选取的 input 元素</td>
-</tr>
-<tr>
-<td>:checked</td>
-<td>$(“:checked”)</td>
-<td>返回所有被选中的 input 元素</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-9-表单选择器"><a href="#3-9-表单选择器" class="headerlink" title="3.9 表单选择器"></a>3.9 表单选择器</h2><table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>实例</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>:input</td>
-<td>$(“:input”)</td>
-<td>返回所有 input, textarea, select 和 button 元素</td>
-</tr>
-<tr>
-<td>:text</td>
-<td>$(“:text”)</td>
-<td>返回所有的单行文本框</td>
-</tr>
-<tr>
-<td>:password</td>
-<td>$(“:password”)</td>
-<td>返回所有密码框</td>
-</tr>
-<tr>
-<td>:radio</td>
-<td>$(“:radio”)</td>
-<td>返回所有单选按钮</td>
-</tr>
-<tr>
-<td>:checkbox</td>
-<td>$(“:checkbox”)</td>
-<td>返回所有复选框</td>
-</tr>
-<tr>
-<td>:submit</td>
-<td>$(“:submit”)</td>
-<td>返回所有提交按钮</td>
-</tr>
-<tr>
-<td>:image</td>
-<td>$(“:image”)</td>
-<td>返回所有图像就域</td>
-</tr>
-<tr>
-<td>:reset</td>
-<td>$(“:reset”)</td>
-<td>返回所有重置按钮</td>
-</tr>
-<tr>
-<td>:button</td>
-<td>$(“:button”)</td>
-<td>返回所有按钮（包括button)</td>
-</tr>
-<tr>
-<td>:file</td>
-<td>$(“:file”)</td>
-<td>返回所有文件域</td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/深入理解Java容器/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="秦纪涛">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="XiaoTao's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/02/深入理解Java容器/" itemprop="url">深入理解Java容器</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T11:44:59+08:00">
-                2018-05-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/05/02/深入理解Java容器/" class="leancloud_visitors" data-flag-title="深入理解Java容器">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="/images/container.jpg" alt="Java container"><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/02/深入理解Java容器/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
           </div>
-          <!--/noindex-->
         
+
+        
+
+        
+        </div>
       
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/19/jQuery手册/" rel="next" title="jQuery手册">
+                <i class="fa fa-chevron-left"></i> jQuery手册
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1130,10 +519,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1141,6 +531,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1352,6 +753,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1403,6 +808,30 @@
       </style>
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'jitaoqin',
+            repo: 'jitaoqin.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'b5b0005fea010729a07e64151853a5e996230bfa',
+            
+                client_id: 'd841d9646a0520200715'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
@@ -1862,6 +1291,23 @@
 
   
   
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: ,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
 
   
 
