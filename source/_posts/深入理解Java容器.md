@@ -4,8 +4,10 @@ date: 2018-05-02 11:44:59
 categories: java
 tags:
   - java container
+typora-root-url: ..
 ---
 ![Java container](/images/container.jpg )
+
 <!-- more -->
 
 # java.util.Iterator
@@ -15,13 +17,13 @@ JDK中定义：对 collection 进行迭代的迭代器。迭代器取代了 Java
   1、迭代器允许调用者利用定义良好的语义在迭代期间从迭代器所指向的 collection 移除元素。
   2、方法名称得到了改进。
   其接口定义如下：  
-  
+
 	public interface Iterator {  
 		boolean hasNext();	// 判断容器内是否还有可供访问的元素
 		Object next();		// 返回值是Object，需要强制转换
 		void remove();		// 删除迭代器元素
 	}
-	
+
 **如果在使用迭代过程中使用集合中的remove()，则代码将出现问题。**  
 
 	import java.util.List ;  
@@ -39,10 +41,10 @@ JDK中定义：对 collection 进行迭代的迭代器。迭代器取代了 Java
 				if("_".equals(str)){  
 					all.remove(str) ;   // 删除元素       
 				}else{  
-                System.out.println(str) ;   // 输出内容  
+	            System.out.println(str) ;   // 输出内容  
 				}  
 			}  
-        System.out.println("删除之后的集合：" + all) ;  
+	    System.out.println("删除之后的集合：" + all) ;  
 		}  
 	}; 
 	// hello
